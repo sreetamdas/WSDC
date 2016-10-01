@@ -1,9 +1,23 @@
+@font-face {
+    font-family: SharpUnity;
+    src: url(fonts/SharpUnity-Extrabold.ttf);
+}
+
+.SharpUnity {
+    font-family: SharpUnity;
+    text-transform: none;
+}
+
 .bg-dark {
     background-color: #2a2a2a;
 }
 
 .white {
     color: lightgrey;
+}
+
+.black{
+    color: black;
 }
 
 figure {
@@ -64,4 +78,14 @@ figure:hover:before {
 
 .cap-bot:hover figcaption {
     bottom: 0;
+}
+
+#contact {
+    background-image: url(../img/bg/divider6.jpg);
+    width: 100%;
+    background-size: cover;
+    background-size: 100%;
+    background-position: center;
+    height: 100%;
+    max-height: 580px;
 }
