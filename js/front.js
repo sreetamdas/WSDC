@@ -5,7 +5,7 @@ if ($.cookie("theme_csspath")) {
 $(function () {
 
     sticky();
-    map();
+    //map();
     utils();
     demo();
 
@@ -43,7 +43,7 @@ function sticky() {
  *  map 
  *  =======================================*/
 
-function map() {
+/*function map() {
 
     var styles = [];
     map = new GMaps({

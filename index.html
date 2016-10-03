@@ -44,7 +44,7 @@
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                        <a href="#intro" class="navbar-brand scroll-to"><img src="img/wsdcSmall.png"        height="50px" alt=""></a>
+                        <a href="#intro" class="navbar-brand scroll-to"><img src="img/wsdcSmall.png" height="50px" alt=""></a>
                     </div>
                     <div id="navigation" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right SharpUnity">
@@ -547,7 +547,8 @@
                     <p class="SharpUnity text-center black" style="font-size: 64px">Crafted in NITW</p>
                     <hr class="black">
                     <p class="SharpUnity text-center black" style="font-size: 24px">
-                        1st Floor, Center for Innovation & Incubation<br>National Institute of Technology, Warangal, Telangana, India 506004</p>
+                        1st Floor, Center for Innovation & Incubation
+                        <br>National Institute of Technology, Warangal, Telangana, India 506004</p>
                 </div>
             </div>
         </div>
@@ -565,15 +566,49 @@
     </footer>
 
     <!-- Javascript files-->
-    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
     </script>
     <script src="css/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;amp;sensor=false"></script>
-    <script src="js/gmaps.js"></script>
+
+    <script>
+        var map;
+
+        function initMap() {
+            var myLatLng = {
+                lat: 17.984019,
+                lng: 79.533290
+            };
+            map = new google.maps.Map(document.getElementById('map'), {
+
+                center: myLatLng,
+                zoom: 15,
+                zoomControl: true,
+                zoomControlOptions: {
+                    position: google.maps.ControlPosition.LEFT_CENTER
+                },
+                scaleControl: true,
+                scrollwheel: false
+            });
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Hello World!'
+            });
+
+            marker.addListener('click', function () {
+                infowindow.open(map, marker);
+            });
+            var infowindow = new google.maps.InfoWindow({
+                content: '<h3>WSDC HQ</h3><h5>1st Floor, Center for Innovation & Incubation National Institute of Technology, Warangal, Telangana, India 506004</h5>'
+            });
+
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6M2__AV49tRQxL4MCnToFwJqc52AIV9Q&callback=initMap"></script>
     <script src="js/jquery.cookie.js"></script>
     <script src="js/front.js"></script>
 </body>
