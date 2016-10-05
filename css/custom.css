@@ -176,3 +176,10 @@ figure:hover:before {
   margin-left: auto;
   margin-right: auto;
 }
+
+.ui.borderless.menu .item:hover,
+.ui.borderless.menu .item .menu .item:hover,
+.ui.menu .borderless.item:hover {
+  background: #2d3483 !important;
+    color: white !important;
+}
