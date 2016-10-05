@@ -3,8 +3,27 @@
     src: url(fonts/SharpUnity-Extrabold.ttf);
 }
 
+@font-face {
+    font-family: SharpUnitySB;
+    src: url(fonts/SharpUnity-Semibold.ttf);
+}
+
+@font-face {
+    font-family: SharpUnityBook;
+    src: url(fonts/SharpUnity-Book.ttf);
+}
 .SharpUnity {
     font-family: SharpUnity;
+    text-transform: none;
+}
+
+.SharpUnitySB {
+    font-family: SharpUnitySB;
+    text-transform: none;
+}
+
+.SharpUnityBook {
+    font-family: SharpUnityBook;
     text-transform: none;
 }
 
