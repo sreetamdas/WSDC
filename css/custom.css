@@ -109,3 +109,70 @@ figure:hover:before {
     max-height: 580px;
     background-repeat: no-repeat;
 }
+
+.linkIndigo a:hover{
+    background-color: #2d3483;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.indigo {
+    color: #2d3483;
+    background-color: #2d3483;
+}
+
+
+.ui.inverted.indigo.buttons .button,
+.ui.inverted.indigo.button {
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 2px #2d3483 inset !important;
+  color: #2d3483;
+}
+
+.ui.inverted.indigo.buttons .button:hover,
+.ui.inverted.indigo.button:hover,
+.ui.inverted.indigo.buttons .button:focus,
+.ui.inverted.indigo.button:focus,
+.ui.inverted.indigo.buttons .button.active,
+.ui.inverted.indigo.button.active,
+.ui.inverted.indigo.buttons .button:active,
+.ui.inverted.indigo.button:active {
+  box-shadow: none !important;
+  color: #FFFFFF;
+}
+
+.ui.inverted.indigo.buttons .button:hover,
+.ui.inverted.indigo.button:hover {
+  background-color: #2d3483;
+}
+
+.ui.inverted.indigo.buttons .button:focus,
+.ui.inverted.indigo.button:focus {
+  background-color: #2d3483;
+}
+
+.ui.inverted.indigo.buttons .active.button,
+.ui.inverted.indigo.active.button {
+  background-color: #2d3483;
+}
+
+.ui.inverted.indigo.buttons .button:active,
+.ui.inverted.indigo.button:active {
+  background-color: #2d3483;
+}
+
+.ui.gigantic.buttons .button,
+.ui.gigantic.buttons .or,
+.ui.gigantic.button {
+  font-size: 2.5rem;
+}
+
+
+.ui[class*="center-floated"].buttons,
+.ui[class*="center-floated"].button {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
