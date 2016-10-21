@@ -183,3 +183,7 @@ figure:hover:before {
   background: #2d3483 !important;
     color: white !important;
 }
+
+.text-justify {
+    text-align: justify;
+}
