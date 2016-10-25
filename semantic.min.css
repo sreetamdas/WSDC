@@ -3446,7 +3446,7 @@ body>.ui.grid {
     font-size: 1.1em
 }
 
-@font-face {
+@font-/*face {
     font-family: 'Basic Icons';
     src: url(https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/fonts/basic.icons.eot);
     src: url(https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/fonts/basic.icons.eot?#iefix) format('embedded-opentype'), url(https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/fonts/basic.icons.svg#basic.icons) format('svg'), url(https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/fonts/basic.icons.woff) format('woff'), url(https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.13.0/fonts/basic.icons.ttf) format('truetype');
@@ -3476,7 +3476,7 @@ i.basic.icon {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
-    font-smoothing: antialiased
+    font-sm*/oothing: antialiased
 }
 
 i.basic.icon.circle.attention:before {
